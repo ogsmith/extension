@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', _ => {
       url: 'https://www.americastestkitchen.com/api/v4/atk/homepage?site_key=atk',
       data: '',
       success: function(d) {
-        const recipes = d.data.data.recipes
+        const recipes = d.data.recipes;
 
         recipes.pop();
 
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', _ => {
 
   input.addEventListener('keyup', _ => {
     input.value.length > 0 ? show(clear) : hide(clear);
-  })
+  });
 
   clear.addEventListener('click', _ => {
     input.value = '';
