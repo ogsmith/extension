@@ -2,5 +2,8 @@
 
 ## To Do's
 
-  * [x] popup search functionality
-  * [ ] style new tab page
+  * [x] popup search functionality - Andrew
+  * [x] style new tab page - Mike
+  * [x] add clear button to search input - Mike
+  * [ ] disable tab in popup - Ian
+  * [ ] grab recent content from homepage API - Ben
