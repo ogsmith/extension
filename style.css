@@ -40,8 +40,6 @@ body {
 }
 
 .search {
-  max-width: 80rem;
-  width: 100%;
   position: relative;
   border-bottom: .3rem solid #3d3d3d;
 }
@@ -61,7 +59,10 @@ body {
   outline: none;
   color: #3d3d3d;
 }
-
+.container {
+  max-width: 80rem;
+  width: 100%;
+}
 .search__submit {
   position: absolute;
   bottom: 0;
@@ -115,4 +116,7 @@ body {
 .hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.popular-search{
 }
