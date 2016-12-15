@@ -59,9 +59,10 @@ body {
   outline: none;
   color: #3d3d3d;
 }
-.container {
+.search__container {
   max-width: 80rem;
   width: 100%;
+  margin-bottom: 10rem;
 }
 .search__submit {
   position: absolute;
@@ -118,5 +119,70 @@ body {
   pointer-events: none;
 }
 
-.popular-search{
+.recipes__container {
+  width: 100%;
+  max-width: 80%;
+  h2 {
+    color: #3d3d3d;
+  }
+}
+
+.recipes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.recipe {
+  display: block;
+  margin: 0;
+  width: 23%;
+  background-color: white;
+}
+
+.recipe:not(:last-child) {
+  margin-right: 0;
+}
+
+.recipe__image {
+  width: 100%;
+  height: auto;
+}
+
+.recipe__data {
+  padding: 2rem 2rem 4rem 2rem;
+  font-size: 1.6rem;
+}
+
+.recipe__link {
+  text-decoration: none;
+  color: #3d3d3d;
+}
+
+.recipe__title {
+  margin: 0;
+}
+
+.recipe__link:hover .recipe__title, .recipe__image-link:hover + .recipe__data .recipe__link .recipe__title {
+  color: #d73a15;
+}
+
+.popular-search {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.popular-search span {
+  margin-right: 1rem;
+  color: #767f81;
+}
+
+.popular-search a {
+  margin-right: .5rem;
+  color: #3d3d3d;
+}
+
+.popular-search a:hover {
+  text-decoration: none;
 }
