@@ -2,5 +2,5 @@
 
 ## To Do's
 
-  * [ ] popup search functionality
+  * [x] popup search functionality
   * [ ] style new tab page
