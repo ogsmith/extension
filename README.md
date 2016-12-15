@@ -6,4 +6,4 @@
   * [x] style new tab page - Mike
   * [x] add clear button to search input - Mike
   * [ ] disable tab in popup - Ian
-  * [ ] grab recent content from homepage API - Ben
+  * [x] grab recent content from homepage API - Ben
