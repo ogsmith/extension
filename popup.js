@@ -117,6 +117,18 @@
 //   });
 // });
 
-function searchThis(e){
-  alert(e);
+console.log('it works')
+
+const form = document.querySelector('.form');
+const input = document.querySelector('input[type="search"]');
+
+form.addEventListener('submit', searchThis);
+
+function searchThis() {
+  console.log('it works')
+
+  const query = input.value;
+  const url = `https://www.americastestkitchen.com/search?q=${query}`;
+
+  window.location.href = url;
 }
