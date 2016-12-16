@@ -273,9 +273,12 @@ body {
   @media (max-width: 768px) {
     .recipe {
       width: 48%; } }
+  .recipe__image-link {
+    display: block;
+    background-color: #efefef; }
   .recipe__image {
     width: 100%;
-    height: auto; }
+    padding-bottom: 100%; }
   .recipe__data {
     padding: 2rem 2rem 4rem 2rem;
     font-size: 1.6rem; }
