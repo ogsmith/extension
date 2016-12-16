@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', _ => {
             </figure>`
         }).join('');
 
-        document.querySelector('.recipes').innerHTML = template;
+        document.querySelector('.recipes__cards').innerHTML = template;
       },
       dataType: 'json'
     });

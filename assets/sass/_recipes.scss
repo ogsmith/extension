@@ -1,0 +1,50 @@
+.recipes {
+  width: 100%;
+  max-width: 80%;
+
+  &__heading {
+    color: #3d3d3d;
+  }
+
+  &__cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.recipe {
+  display: block;
+  margin: 0;
+  width: 23%;
+  background-color: white;
+
+  &:not(:last-child) {
+    margin-right: 0;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__data {
+    padding: 2rem 2rem 4rem 2rem;
+    font-size: 1.6rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #3d3d3d;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__link:hover .recipe__title,
+  &__image-link:hover + .recipe__data .recipe__link .recipe__title {
+    color: #d73a15;
+  }
+}
