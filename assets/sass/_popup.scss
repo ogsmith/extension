@@ -1,0 +1,25 @@
+.popup {
+  padding: 1rem;
+
+  &__input {
+    appearance: none;
+    background-color: white;
+    outline: none;
+    border: 2px solid #3d3d3d;
+    padding: 1rem;
+    margin-bottom: .5rem;
+  }
+
+  &__submit {
+    appearance: none;
+    border: none;
+    color: white;
+    background-color: #d73a15;
+    width: 100%;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+  }
+
+}
