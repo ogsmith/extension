@@ -1,0 +1,98 @@
+.search {
+  max-width: 80rem;
+  width: 100%;
+  margin-bottom: 10rem;
+
+  &__form {
+    position: relative;
+    border-bottom: .3rem solid #3d3d3d;
+  }
+
+  &__input,
+  &__submit,
+  &__clear {
+    display: block;
+    appearance: none;
+    background: none;
+    border: none;
+  }
+
+  &__input {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem 2rem 1rem 6rem;
+    font-size: 3rem;
+    outline: none;
+    color: #3d3d3d;
+  }
+
+  &__submit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1.1rem 0;
+    pointer-events: none;
+  }
+
+  &__submit svg {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  &__clear {
+    width: 3rem;
+    height: 3rem;
+    background: #d8d8d8;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -1.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #3d3d3d;
+    }
+  }
+
+  &__clear::before,
+  &__clear::after {
+    content: '';
+    display: inline-block;
+    width: 1.3rem;
+    height: 1px;
+    background: white;
+    position: absolute;
+  }
+
+  &__clear::before {
+    transform: rotate(45deg);
+  }
+
+  &__clear::after {
+    transform: rotate(-45deg);
+  }
+
+  &__suggestions {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+
+    &--title {
+      margin-right: .5rem;
+      color: #767f81;
+    }
+
+    &--link {
+      margin-right: .5rem;
+      color: #3d3d3d;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
