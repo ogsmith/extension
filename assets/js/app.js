@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', _ => {
           return `
             <figure class="recipe">
               <a class="recipe__image-link" href="https://www.americastestkitchen.com/recipes/${recipe.slug}">
-                <img class="recipe__image" src="http:${recipe.photo.image_url}" alt="${recipe.photo.alt}" />
+                <div class="recipe__image js-lazy" data-src="http:${recipe.photo.image_url}"></div>
               </a>
               <figcaption class="recipe__data">
                 <a class="recipe__link" href="https://www.americastestkitchen.com/recipes/${recipe.slug}">
