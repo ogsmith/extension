@@ -134,10 +134,6 @@ table {
 td, th {
   padding: 0; }
 
-.hidden {
-  opacity: 0;
-  pointer-events: none; }
-
 html {
   font-size: 8px; }
 
@@ -164,6 +160,10 @@ body {
   padding: 6rem 2rem; }
   .logo svg {
     width: 25rem; }
+
+.hidden {
+  opacity: 0;
+  pointer-events: none; }
 
 .search {
   max-width: 80rem;
