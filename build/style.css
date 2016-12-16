@@ -168,7 +168,7 @@ body {
 .search {
   max-width: 80rem;
   width: 100%;
-  margin-bottom: 10rem; }
+  margin-bottom: 6rem; }
   .search__form {
     position: relative;
     border-bottom: .3rem solid #3d3d3d; }
@@ -184,15 +184,30 @@ body {
     font-size: 3rem;
     outline: none;
     color: #3d3d3d; }
+    @media (max-width: 768px) {
+      .search__input {
+        font-size: 2rem;
+        padding-left: 4rem; } }
+    @media (max-width: 400px) {
+      .search__input {
+        font-size: 1.5rem;
+        letter-spacing: .3px; } }
   .search__submit {
     position: absolute;
     bottom: 0;
     left: 0;
     padding: 1.1rem 0;
     pointer-events: none; }
+    @media (max-width: 768px) {
+      .search__submit {
+        padding: .8rem 0; } }
   .search__submit svg {
     width: 3rem;
     height: 3rem; }
+    @media (max-width: 768px) {
+      .search__submit svg {
+        width: 2rem;
+        height: 2rem; } }
   .search__clear {
     width: 3rem;
     height: 3rem;
@@ -222,7 +237,8 @@ body {
     transform: rotate(-45deg); }
   .search__suggestions {
     margin-top: 1rem;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    line-height: 1.6; }
     .search__suggestions--title {
       margin-right: .5rem;
       color: #767f81; }
@@ -234,33 +250,47 @@ body {
 
 .recipes {
   width: 100%;
-  max-width: 80%; }
+  max-width: 140rem; }
   .recipes__heading {
-    color: #3d3d3d; }
+    color: #3d3d3d;
+    margin-bottom: 1rem; }
+    @media (max-width: 768px) {
+      .recipes__heading {
+        font-size: 2.5rem;
+        margin-bottom: 0; } }
   .recipes__cards {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding: 1rem 0; }
 
 .recipe {
   display: block;
-  margin: 0;
+  margin: 1rem 0;
   width: 23%;
   background-color: white; }
-  .recipe:not(:last-child) {
-    margin-right: 0; }
+  @media (max-width: 768px) {
+    .recipe {
+      width: 48%; } }
   .recipe__image {
     width: 100%;
     height: auto; }
   .recipe__data {
     padding: 2rem 2rem 4rem 2rem;
     font-size: 1.6rem; }
+    @media (max-width: 768px) {
+      .recipe__data {
+        padding-bottom: 3rem; } }
   .recipe__link {
     text-decoration: none;
     color: #3d3d3d; }
   .recipe__title {
+    font-weight: 400;
     margin: 0; }
+    @media (max-width: 920px) {
+      .recipe__title {
+        font-size: 1.6rem; } }
   .recipe__link:hover .recipe__title, .recipe__image-link:hover + .recipe__data .recipe__link .recipe__title {
     color: #d73a15; }
 
