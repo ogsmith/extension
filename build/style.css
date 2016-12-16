@@ -265,6 +265,12 @@ body {
     flex-wrap: wrap;
     padding: 1rem 0; }
 
+.skeleton__title {
+  color: transparent;
+  background: #efefef;
+  display: inline;
+  border-radius: 2px; }
+
 .recipe {
   display: block;
   margin: 1rem 0;
@@ -278,7 +284,9 @@ body {
     background-color: #efefef; }
   .recipe__image {
     width: 100%;
-    padding-bottom: 100%; }
+    padding-bottom: 100%;
+    opacity: 0;
+    transition: opacity .3s; }
   .recipe__data {
     padding: 2rem 2rem 4rem 2rem;
     font-size: 1.6rem; }
@@ -290,7 +298,8 @@ body {
     color: #3d3d3d; }
   .recipe__title {
     font-weight: 400;
-    margin: 0; }
+    margin: 0;
+    line-height: 1.6; }
     @media (max-width: 920px) {
       .recipe__title {
         font-size: 1.6rem; } }

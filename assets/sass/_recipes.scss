@@ -21,6 +21,13 @@
   }
 }
 
+.skeleton__title {
+  color: transparent;
+  background: #efefef;
+  display: inline;
+  border-radius: 2px;
+}
+
 .recipe {
   display: block;
   margin: 1rem 0;
@@ -38,6 +45,8 @@
   &__image {
     width: 100%;
     padding-bottom: 100%;
+    opacity: 0;
+    transition: opacity .3s;
   }
 
   &__data {
@@ -56,6 +65,7 @@
   &__title {
     font-weight: 400;
     margin: 0;
+    line-height: 1.6;
     @media (max-width: 920px) {
       font-size: 1.6rem;
     }

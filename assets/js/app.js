@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', _ => {
           return `
             <figure class="recipe">
               <a class="recipe__image-link" href="https://www.americastestkitchen.com/recipes/${recipe.slug}">
-                <div class="recipe__image js-lazy" data-src="http:${recipe.photo.image_url}"></div>
+                <img class="recipe__image js-lazy" data-src="http:${recipe.photo.image_url}" data-alt="http:${recipe.photo.alt}"/>
               </a>
               <figcaption class="recipe__data">
                 <a class="recipe__link" href="https://www.americastestkitchen.com/recipes/${recipe.slug}">
@@ -35,6 +35,24 @@ document.addEventListener('DOMContentLoaded', _ => {
         }).join('');
 
         document.querySelector('.recipes__cards').innerHTML = template;
+
+        const lazyload = [...document.querySelectorAll('.js-lazy')];
+
+    		lazyload.forEach(el => {
+
+    			const img = document.createElement('img');
+    			const src = el.getAttribute('data-src');
+
+    			img.onload = () => {
+
+    				el.src = `${src}`;
+            el.style.paddingBottom = 0;
+
+    				requestAnimationFrame(() => el.style.opacity = 1);
+    			}
+
+    			img.src = src;
+    		})
       },
       dataType: 'json'
     });
