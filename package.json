@@ -1,0 +1,19 @@
+{
+  "name": "extension",
+  "version": "1.0.0",
+  "description": "a chrome extension for ATK",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch assets/sass:build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ogsmith/extension.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ogsmith/extension/issues"
+  },
+  "homepage": "https://github.com/ogsmith/extension#readme"
+}
