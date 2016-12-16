@@ -58,9 +58,9 @@ document.addEventListener('DOMContentLoaded', _ => {
     });
   }
 
-  const form = document.querySelector('.search');
-  const input = document.querySelector('.search__input');
-  const clear = document.querySelector('.search__clear');
+  const form = document.querySelector('.js-form');
+  const input = document.querySelector('.js-input');
+  const clear = document.querySelector('.js-clear');
 
   form.addEventListener('submit', searchThis);
 
@@ -70,10 +70,12 @@ document.addEventListener('DOMContentLoaded', _ => {
 
   clear.addEventListener('click', _ => {
     input.value = '';
-    hide(clear)
+    hide(clear);
   });
 
   function searchThis(e) {
+    if (input.value.trim() === '') return;
+
     const query = input.value
     const url = `https://www.americastestkitchen.com/search?q=${query}`;
 
