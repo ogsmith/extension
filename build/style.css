@@ -184,15 +184,30 @@ body {
     font-size: 3rem;
     outline: none;
     color: #3d3d3d; }
+    @media (max-width: 768px) {
+      .search__input {
+        font-size: 2rem;
+        padding-left: 4rem; } }
+    @media (max-width: 400px) {
+      .search__input {
+        font-size: 1.5rem;
+        letter-spacing: .3px; } }
   .search__submit {
     position: absolute;
     bottom: 0;
     left: 0;
     padding: 1.1rem 0;
     pointer-events: none; }
+    @media (max-width: 768px) {
+      .search__submit {
+        padding: .8rem 0; } }
   .search__submit svg {
     width: 3rem;
     height: 3rem; }
+    @media (max-width: 768px) {
+      .search__submit svg {
+        width: 2rem;
+        height: 2rem; } }
   .search__clear {
     width: 3rem;
     height: 3rem;
@@ -222,7 +237,8 @@ body {
     transform: rotate(-45deg); }
   .search__suggestions {
     margin-top: 1rem;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    line-height: 1.6; }
     .search__suggestions--title {
       margin-right: .5rem;
       color: #767f81; }
