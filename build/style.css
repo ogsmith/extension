@@ -258,6 +258,9 @@ body {
   .recipe__data {
     padding: 2rem 2rem 4rem 2rem;
     font-size: 1.6rem; }
+    @media (max-width: 768px) {
+      .recipe__data {
+        padding-bottom: 3rem; } }
   .recipe__link {
     text-decoration: none;
     color: #3d3d3d; }

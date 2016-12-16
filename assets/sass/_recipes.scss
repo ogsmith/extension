@@ -33,6 +33,9 @@
   &__data {
     padding: 2rem 2rem 4rem 2rem;
     font-size: 1.6rem;
+    @media (max-width: 768px) {
+      padding-bottom: 3rem;
+    }
   }
 
   &__link {
