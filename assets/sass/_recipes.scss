@@ -1,6 +1,6 @@
 .recipes {
   width: 100%;
-  max-width: 80%;
+  max-width: 140rem;
 
   &__heading {
     color: #3d3d3d;
@@ -11,17 +11,18 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    padding: 1rem 0;
   }
 }
 
 .recipe {
   display: block;
-  margin: 0;
+  margin: 1rem 0;
   width: 23%;
   background-color: white;
-
-  &:not(:last-child) {
-    margin-right: 0;
+  @media (max-width: 768px) {
+    width: 48%;
   }
 
   &__image {
@@ -40,7 +41,11 @@
   }
 
   &__title {
+    font-weight: 400;
     margin: 0;
+    @media (max-width: 920px) {
+      font-size: 1.6rem;
+    }
   }
 
   &__link:hover .recipe__title,

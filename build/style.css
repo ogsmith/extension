@@ -234,22 +234,24 @@ body {
 
 .recipes {
   width: 100%;
-  max-width: 80%; }
+  max-width: 140rem; }
   .recipes__heading {
     color: #3d3d3d; }
   .recipes__cards {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding: 1rem 0; }
 
 .recipe {
   display: block;
-  margin: 0;
+  margin: 1rem 0;
   width: 23%;
   background-color: white; }
-  .recipe:not(:last-child) {
-    margin-right: 0; }
+  @media (max-width: 768px) {
+    .recipe {
+      width: 48%; } }
   .recipe__image {
     width: 100%;
     height: auto; }
@@ -260,7 +262,11 @@ body {
     text-decoration: none;
     color: #3d3d3d; }
   .recipe__title {
+    font-weight: 400;
     margin: 0; }
+    @media (max-width: 920px) {
+      .recipe__title {
+        font-size: 1.6rem; } }
   .recipe__link:hover .recipe__title, .recipe__image-link:hover + .recipe__data .recipe__link .recipe__title {
     color: #d73a15; }
 
